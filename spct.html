@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ChampagneCharles</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+
+<body ng-app="myApp" ng-controller="ctrl-2">
+  <div class="container-fluid p-0">
+    <!-- Begin Header -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <img src="./assets/img/Logo-Wine-VN.png" width="50" height="50">
+      <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ruouvang.html">RƯỢU VANG <i class="fa-solid fa-caret-down"></i></a>
+              <div class="mega-box">
+                <div class="content-box">
+                  <div class="row">
+                      <div class="col-sm-3">
+                        <header>
+                          <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/mn_type.svg" alt="./assets/img/No-img.png">
+                          Theo loại rượu
+                        </header>
+                        <ul class="mega-links">
+                          <li><a href="#">Drop Menu 1</a></li>
+                          <li><a href="#">Drop Menu 2</a></li>
+                          <li><a href="#">Drop Menu 3</a></li>
+                          <li><a href="#">Drop Menu 4</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <header>
+                          <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/mn_country.svg" alt="./assets/img/No-img.png">
+                          Theo nước
+                        </header>
+                        <ul class="mega-links">
+                          <li><a href="#">Drop Menu 1</a></li>
+                          <li><a href="#">Drop Menu 2</a></li>
+                          <li><a href="#">Drop Menu 3</a></li>
+                          <li><a href="#">Drop Menu 4</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <header>
+                          <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/mn_grape.svg" alt="./assets/img/No-img.png">
+                          Theo giống nho
+                        </header>
+                        <ul class="mega-links">
+                          <li><a href="#">Drop Menu 1</a></li>
+                          <li><a href="#">Drop Menu 2</a></li>
+                          <li><a href="#">Drop Menu 3</a></li>
+                          <li><a href="#">Drop Menu 4</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <header>
+                          <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/mn_region.svg" alt="./assets/img/No-img.png">
+                          Theo vùng nổi tiếng
+                        </header>
+                        <ul class="mega-links">
+                          <li><a href="#">Drop Menu 1</a></li>
+                          <li><a href="#">Drop Menu 2</a></li>
+                          <li><a href="#">Drop Menu 3</a></li>
+                          <li><a href="#">Drop Menu 4</a></li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GIỚI THIỆU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+          </ul>
+          <form class="form-search d-flex">
+            <input class="form-control me-2" type="text" placeholder="Tìm kiếm  " />
+            <button class="btn btn-light" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        
+           
+       
+          <div class="d-flex">
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart
+              <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </button>
+            <a href="login.html" class="btn btn-outline-dark ms-2" type="submit">
+              <i class="fa-solid fa-user"></i>
+                Đăng nhập
+            </a>
+        </div>
+        </div>
+  </nav>
+     <!-- End Header -->
+     <div id="content">
+      <div class="row px-5 m-0">
+        <div class="col-sm-9">
+          <section class="py-3">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-4">
+                      <img class= "card-img-top mb-5 mb-md-0" ng-src="{{product.hinhAnh}}" />
+                      <div class="slider-for">
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="fw-bolder" style="color: #990d23; font-size: 24px;">{{product.ten}}</h1>
+                        <p class="lead" style="text-align: left; font-size: 16px;">{{product.noiDung}}</p>
+                        <div class="properties row d-flex">
+                          <div class="col-sm-4 d-flex">
+                            <div class="pa-icon">
+                              <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/pa_giong-nho.svg" alt="">
+                            </div>
+                            <div class="pa-info">
+                              <div class="pa-info-label">Giống nho</div>
+                              <div class="pa-info-value">
+                                <p><a href="#">{{product.giongNho}}</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 d-flex">
+                            <div class="pa-icon">
+                              <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/pa_loai-vang.svg" alt="">
+                            </div>
+                            <div class="pa-info">
+                              <div class="pa-info-label">Loại vang</div>
+                              <div class="pa-info-value">
+                                <p><a href="#">{{product.loaiVang}}</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 d-flex">
+                            <div class="pa-icon">
+                              <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/pa_nha-san-xuat.svg" alt="">
+                            </div>
+                            <div class="pa-info">
+                              <div class="pa-info-label">NHÀ SẢN XUẤT</div>
+                              <div class="pa-info-value">
+                                <p><a href="#">{{product.nhaSanXuat}}</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 d-flex">
+                            <div class="pa-icon">
+                              <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/pa_quoc-gia.svg" alt="">
+                            </div>
+                            <div class="pa-info">
+                              <div class="pa-info-label">QUỐC GIA</div>
+                              <div class="pa-info-value">
+                                <p>{{product.quocGia}}</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 d-flex">
+                            <div class="pa-icon">
+                              <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/pa_nong-do.svg" alt="">
+                            </div>
+                            <div class="pa-info">
+                              <div class="pa-info-label">NỒNG ĐỘ</div>
+                              <div class="pa-info-value">
+                                <p>{{product.nongDo}}</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 d-flex">
+                            <div class="pa-icon">
+                              <img src="https://winecellar.vn/wp-content/themes/winecellarvn/assets/icons/svg/pa_dung-tich.svg" alt="">
+                            </div>
+                            <div class="pa-info">
+                              <div class="pa-info-label">DUNG TÍCH</div>
+                              <div class="pa-info-value">
+                                <p>{{product.dungTich}}</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="line-divider"></div>
+                        <div class="product-seasons">
+                            <p>Niên vụ</p>
+                            <div class="ux-swatches">
+                              <div class="ux-swatch">
+                                <a href="#">
+                                  <span>2017</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="ux-swatches">
+                              <div class="ux-swatch">
+                                <a href="#">
+                                  <span>2018</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="ux-swatches">
+                              <div class="ux-swatch">
+                                <a href="#">
+                                  <span>2019</span>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="fs-5 mb-4 mt-3">
+                            <div style="font-size: 14px;">Tình trạng: <span class="text-success fw-bold">Còn hàng</span></div>
+                            <span class="text-danger" style="font-weight: 600;">{{product.donGia | number:'0':'symbol':'short'}} ₫</span>
+                        </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-md-3 col-lg-3 col-xl-3 d-flex">
+                                <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                  <i class="fas fa-minus"></i>
+                                </button>
+          
+                                <input id="form1" min="0" name="quantity" value="1" type="number"
+                                  class="form-control form-control-sm" style="width: 60px;"/>
+          
+                                <button class="btn btn-link px-2"
+                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                  <i class="fas fa-plus"></i>
+                                </button>
+                              </div>
+                            <a href="/giohang.html" class="btn btn-select-vang btn-outline-dark flex-shrink-0" type="button" style="width: 200px;">
+                                <i class="bi-cart-fill me-1"></i>
+                                Thêm vào giỏ hàng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+          <div class="container-fluid section-title">
+            <h2 class="section-title-main">THÔNG TIN SẢN PHẨM</h2>
+            <hr />
+          </div>
+          <p style="text-align: left;">
+            {{product.moTa}}
+          </p>
+        </section>
+        </div>
+        <div class="col-sm-3" style="padding: 64px 0;">
+          <div class="ss-icon-box d-flex">
+              <div class="icon-box-img" style="width: 20px;">
+                <i class="fa-solid fa-phone" style="font-size: 18px; color: #990D23;"></i>
+              </div>
+              <div class="icon-box-text">
+                <h5 class="text-uppercase">HOTLINE</h5>
+                <p><a href="tel:0346366482">0346366482</a></p>
+                <p><a href="tel:0346366482">0346366482</a></p>
+                <p><a href="tel:0346366482">0346366482</a></p>
+              </div>
+          </div>
+          <div class="ss-icon-box d-flex">
+            <div class="icon-box-img" style="width: 20px;">
+              <i class="fa-solid fa-star" style="font-size: 18px; color: #990D23;"></i>
+            </div>
+            <div class="icon-box-text">
+              <h5 class="text-uppercase">Chương trình khuyến mãi</h5>
+            </div>
+          </div>
+          <div class="ss-icon-box d-flex">
+            <div class="icon-box-img" style="width: 20px;">
+              <i class="fa-solid fa-shop" style="font-size: 18px; color: #990D23;"></i>
+            </div>
+            <div class="icon-box-text">
+              <h5 class="text-uppercase">Thông tin cửa hàng</h5>
+            </div>
+          </div>
+        </div>
+        <!-- End Product Detail -->
+       </div>
+     </div>
+     <div class="container-fluid p-0 mt-3">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-white" style="background-color: #45526e" >
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section>
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  GIỚI THIỆU winecellar
+                </h6>
+                <p>
+                  HỆ THỐNG HẦM RƯỢU VANG WINECELLAR.VN (CÔNG TY TNHH HẦM RƯỢU VIỆT NAM)
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Chi nhánh</h6>
+                <p>
+                  TP. HÀ NỘI
+                </p>
+                <p>
+                  TP. ĐÀ NẴNG
+                </p>
+                <p>
+                  NHA TRANG
+                </p>
+                <p>
+                  TP. HỒ CHÍ MINH
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Danh mục rượu
+                </h6>
+                <p>
+                  <a class="text-white text-decoration-none">Rượu Vang</a>
+                </p>
+                <p>
+                  <a class="text-white text-decoration-none">Rượu Vang Pháp</a>
+                </p>
+                <p>
+                  <a class="text-white text-decoration-none">Rượu Vang Ý</a>
+                </p>
+                <p>
+                  <a class="text-white text-decoration-none">Rượu Vang Mỹ</a>
+                </p>
+              </div>
+
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Liên hệ</h6>
+                <p><i class="fas fa-home mr-3"></i> Quận 2, TP Thủ Đức</p>
+                <p><i class="fas fa-envelope mr-3"></i> leanhthuong2k3@gmail.com </p>
+                <p><i class="fas fa-phone mr-3"></i> 0346.366.482</p>
+                <p><i class="fas fa-print mr-3"></i> 0346.366.482</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+          <hr class="my-3">
+
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2022 Copyright:
+                  <a class="text-white" href="index.html"
+                    >leanhthuong2k3@gmail.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                  ></a>
+
+                <!-- Twitter -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                  ></a>
+
+                <!-- Google -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                  ></a>
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
